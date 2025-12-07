@@ -1,0 +1,55 @@
+# 二进制文件
+tg-listener
+tg-listener.exe
+get-groups
+get-groups.exe
+
+# 会话文件（敏感）
+session.json
+*.session
+
+# 配置文件（可能包含敏感信息）
+.env
+
+# 日志文件
+*.log
+logs/
+
+# 数据文件
+group_ids.json
+
+# Go 相关
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# 依赖
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 数据库
+*.db
+*.sqlite
+*.sqlite3
+
+# Docker
+docker-compose.override.yml
+
+# 临时文件
+tmp/
+temp/

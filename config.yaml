@@ -1,0 +1,56 @@
+# Telegram API 配置
+# https://my.telegram.org/apps
+api:
+  api_id: 111111
+  api_hash: ""
+  session_file: "session.json"
+  proxy_addr: "127.0.0.1:7897"
+
+# 自动添加到订阅 API 配置
+subscription_api:
+  host: "111.111.111.111:123456"
+  api_key: "123456"
+
+# 获取频道100调历史信息的功能开关
+features:
+  fetch_history_enabled: true  # 是否在启动时获取历史消息
+
+# 监听配置
+monitor:
+  # 要监听的频道ID列表
+  channels:
+    - 2582776039
+    - 1338209352
+    - 1965523384
+    - 1914963500
+    - 1695276861
+    - 2817717177
+    - 1313311705
+
+  # 白名单频道 - 这些频道不经过二次内容过滤
+  whitelist_channels:
+    - 1313311705
+
+# 过滤配置
+filters:
+  # 关键词列表 - 消息必须包含这些关键词之一
+  keywords:
+    - "https://"
+    - "http://"
+
+  # 内容过滤 - 二次过滤，消息内容必须包含这些词之一
+  content_filter:
+    - "投稿"
+    - "订阅"
+
+  # 链接黑名单 - 包含这些关键字的链接不显示
+  link_blacklist:
+    - "register"
+    - "t.me"
+    - ".jpg"
+    - ".jpeg"
+    - ".png"
+    - ".gif"
+    - ".webp"
+    - ".bmp"
+    - "go1.569521.xyz"
